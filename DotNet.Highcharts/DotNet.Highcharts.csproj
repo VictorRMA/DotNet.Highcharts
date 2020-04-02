@@ -16,12 +16,13 @@
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>DotNet.Highcharts.snk</AssemblyOriginatorKeyFile>
+    <AssemblyName>DotNet.Highcharts</AssemblyName>
+    <PackageId>CoreCompat.DotNet.Highcharts</PackageId>
+    <PackageProjectUrl>https://github.com/VictorRMA/DotNet.Highcharts</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/VictorRMA/DotNet.Highcharts</RepositoryUrl>
+    <PackageTags>DotNet.Highcharts, Highcharts</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions" Version="2.2.0" />
     <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
