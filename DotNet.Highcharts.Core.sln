@@ -1,23 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Highcharts", "DotNet.Highcharts\DotNet.Highcharts.csproj", "{6FE2EA1E-85E3-4969-BE6C-C08C9BA9029A}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Highcharts.Core", "DotNet.Highcharts.Core\DotNet.Highcharts.Core.csproj", "{6FE2EA1E-85E3-4969-BE6C-C08C9BA9029A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Highcharts.Samples", "DotNet.Highcharts.Samples\DotNet.Highcharts.Samples.csproj", "{9BD9FBB8-2424-4FC3-9B15-805D38CEBC18}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs24
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = DotNet.Highcharts.Samples\\DotNet.Highcharts.Samples.csproj
-		SccProjectName1 = DotNet.Highcharts.Samples
-		SccLocalPath1 = DotNet.Highcharts.Samples
-		SccProjectUniqueName2 = DotNet.Highcharts\\DotNet.Highcharts.csproj
-		SccProjectName2 = DotNet.Highcharts
-		SccLocalPath2 = DotNet.Highcharts
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -50,5 +40,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B1D36E0-6323-4D2B-88C4-4D19920D6E15}
 	EndGlobalSection
 EndGlobal
