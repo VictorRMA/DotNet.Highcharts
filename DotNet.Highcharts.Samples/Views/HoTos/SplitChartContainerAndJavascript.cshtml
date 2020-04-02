@@ -1,0 +1,11 @@
+﻿@model DotNet.Highcharts.Highcharts
+@{
+    ViewBag.Title = "Split Chart Container And Javascript";
+    Layout = "~/Views/Shared/_HowTosLayout.cshtml";
+}
+
+@Model.ChartContainerHtmlString()
+
+@section JavaScripts{
+    @Model.ChartScriptHtmlString()
+}

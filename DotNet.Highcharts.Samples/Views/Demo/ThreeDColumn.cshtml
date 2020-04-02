@@ -1,0 +1,34 @@
+﻿@model DotNet.Highcharts.Highcharts
+@{
+    ViewBag.Title = "3D Column";
+}
+
+<div style="max-width: 600px; margin: 0 auto">
+    @(Model)
+    <div id="sliders">
+        <table>
+            <tr><td>Alpha Angle</td><td><input id="R0" type="range" min="0" max="45" value="15" /> <span id="R0-value" class="value"></span></td></tr>
+            <tr><td>Beta Angle</td><td><input id="R1" type="range" min="0" max="45" value="15" /> <span id="R1-value" class="value"></span></td></tr>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // Activate the sliders
+    $('#R0').on('change', function () {
+        chart.options.chart.options3d.alpha = this.value;
+        showValues();
+        chart.redraw(false);
+    });
+    $('#R1').on('change', function () {
+        chart.options.chart.options3d.beta = this.value;
+        showValues();
+        chart.redraw(false);
+    });
+
+    function showValues() {
+        $('#R0-value').html(chart.options.chart.options3d.alpha);
+        $('#R1-value').html(chart.options.chart.options3d.beta);
+    }
+    showValues();
+</script>
