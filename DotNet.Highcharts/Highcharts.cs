@@ -4,6 +4,7 @@ using System.Text;
 using System.Web;
 using DotNet.Highcharts.Helpers;
 using DotNet.Highcharts.Options;
+using Microsoft.AspNetCore.Html;
 
 namespace DotNet.Highcharts
 {

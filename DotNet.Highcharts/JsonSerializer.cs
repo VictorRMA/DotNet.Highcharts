@@ -176,7 +176,7 @@ namespace DotNet.Highcharts
         {
             Color color = (Color)obj;
             if (color.IsNamedColor)
-                return color.IsKnownColor ? GetJsonString(format, JSON_STRING_FORMAT, color.Name.ToLower()) : GetJsonString(format, JSON_DEFAULT_FORMAT, color.Name);
+                return color.IsNamedColor ? GetJsonString(format, JSON_STRING_FORMAT, color.Name.ToLower()) : GetJsonString(format, JSON_DEFAULT_FORMAT, color.Name);
             if (color.A == 255)
                 return GetJsonString(format, JSON_STRING_FORMAT, ColorTranslator.ToHtml(color));
             return GetJsonString(format, JSON_STRING_FORMAT, GetRgbColor(color));

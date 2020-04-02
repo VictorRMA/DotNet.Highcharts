@@ -5,6 +5,11 @@ using System.Web;
 
 namespace DotNet.Highcharts
 {
+    public interface IHtmlString
+    {
+      string ToHtmlString();
+    }
+
     public class Container : IHtmlString
     {
         readonly List<Highcharts> _Highcharts;
